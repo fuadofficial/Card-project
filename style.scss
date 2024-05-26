@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+// variables
+$brand-color: #22908e;
+$text-color: #707070;
+
+.card {
+    margin: 50px auto;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px rgba(black, 0.16);
+    transition: transform ease 0.5s;
+
+    &:hover{
+        transform: scale(1.03);
+        .card-info{
+            .card-btn{
+                background-color: #f5b826;
+                color: black;
+            }
+        }
+    }
+
+    .card-img {
+        position: relative;
+
+        img {
+            max-width: 100%;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+
+        }
+
+        .card-tags {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            position: absolute;
+            bottom: 30px;
+            left: 30px;
+
+            li {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 18px;
+                color: $text-color;
+                background-color: white;
+                padding: 5px 15px;
+                border-radius: 30px;
+                margin-right: 12px;
+            }
+        }
+    }
+
+    .card-info {
+        padding: 33px 30px 30px 30px;
+
+        .card-title {
+            color: $brand-color;
+            font-size: 24px;
+            font-weight: bold;
+            line-height: 34px;
+        }
+
+        p {
+            color: $text-color;
+            font-size: 16px;
+            line-height: 28px;
+            font-weight: 400;
+            margin: 18px 0 24px;
+
+        }
+
+        .card-btn {
+            background-color: $brand-color;
+            border-radius: 60px;
+            padding: 14px 42px;
+            color: white;
+            font-size: 16px;
+            line-height: 22px;
+            font-weight: bold;
+            display: inline-block;
+            transition:  background-color ease 0.5s;
+        }
+    }
+}
+
+// slider card
+
+.swiper{
+    width: 1144px;
+
+    .swiper-btn{
+        width: 40px;
+        height: 40px;
+        background-color: black;
+        border-radius: 50%;
+
+        &:after{
+            color: white;
+            font-size: 20px;
+        }
+    }
+}

@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.card {
+  margin: 50px auto;
+  background-color: white;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  transition: transform ease 0.5s;
+}
+.card:hover {
+  transform: scale(1.03);
+}
+.card:hover .card-info .card-btn {
+  background-color: #f5b826;
+  color: black;
+}
+.card .card-img {
+  position: relative;
+}
+.card .card-img img {
+  max-width: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.card .card-img .card-tags {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+.card .card-img .card-tags li {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #707070;
+  background-color: white;
+  padding: 5px 15px;
+  border-radius: 30px;
+  margin-right: 12px;
+}
+.card .card-info {
+  padding: 33px 30px 30px 30px;
+}
+.card .card-info .card-title {
+  color: #22908e;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+}
+.card .card-info p {
+  color: #707070;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+  margin: 18px 0 24px;
+}
+.card .card-info .card-btn {
+  background-color: #22908e;
+  border-radius: 60px;
+  padding: 14px 42px;
+  color: white;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color ease 0.5s;
+}
+
+.swiper {
+  width: 1144px;
+}
+.swiper .swiper-btn {
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  border-radius: 50%;
+}
+.swiper .swiper-btn:after {
+  color: white;
+  font-size: 20px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>Card Slider</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <a href="">
+            <div class="card">
+              <div class="card-img">
+                <img src="./img/1 img.jpg" alt="" />
+                <ul class="card-tags">
+                  <li>Web Disign</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+              </div>
+              <div class="card-info">
+                <h4 class="card-title">Web Diary</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quibusdam id quod voluptate praesentium voluptatibus alias
+                </p>
+                <span class="card-btn" href="">Reade More</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="">
+            <div class="card">
+              <div class="card-img">
+                <img src="./img/2 img.jpg" alt="" />
+                <ul class="card-tags">
+                  <li>Web Disign</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+              </div>
+              <div class="card-info">
+                <h4 class="card-title">Web Diary</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quibusdam id quod voluptate praesentium voluptatibus alias
+                </p>
+                <span class="card-btn" href="">Reade More</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="">
+            <div class="card">
+              <div class="card-img">
+                <img src="./img/3 img.jpg" alt="" />
+                <ul class="card-tags">
+                  <li>Web Disign</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+              </div>
+              <div class="card-info">
+                <h4 class="card-title">Web Diary</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quibusdam id quod voluptate praesentium voluptatibus alias
+                </p>
+                <span class="card-btn" href="">Reade More</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="">
+            <div class="card">
+              <div class="card-img">
+                <img src="./img/1 img.jpg" alt="" />
+                <ul class="card-tags">
+                  <li>Web Disign</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+              </div>
+              <div class="card-info">
+                <h4 class="card-title">Web Diary</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quibusdam id quod voluptate praesentium voluptatibus alias
+                </p>
+                <span class="card-btn" href="">Reade More</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev swiper-btn"></div>
+      <div class="swiper-button-next swiper-btn"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: false,
+        slidesPerView: 3,
+        spaceBetween: 38,
+
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+          },
+          767: {
+            slidesPerView: 2,
+            spaceBetween: 38,
+          },
+          992: {
+            slidesPerView: 3,
+            spaceBetween: 38,
+          },
+        },
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+    </script>
+  </body>
+</html>
+
+<!-- video 46/3.30mint -->
